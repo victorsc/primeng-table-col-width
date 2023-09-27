@@ -2,8 +2,8 @@
     <p-table [value]="products" stateStorage="local" stateKey="table" [resizableColumns]="true" columnResizeMode="expand" styleClass="p-datatable-gridlines" [tableStyle]="{'min-width': '50rem'}">
         <ng-template pTemplate="header">
             <tr>
-                <th pResizableColumn [style.width]="'100px'">Code</th>
-                <th pResizableColumn [style.width]="'100px'">Name</th>
+                <th pResizableColumn [pResizableColumnDisabled]='true' [style.width]="'100px'">Code</th>
+                <th pResizableColumn [pResizableColumnDisabled]='true' [style.width]="'100px'">Name</th>
                 <th pResizableColumn>Category</th>
                 <th pResizableColumn>Quantity</th>
             </tr>
